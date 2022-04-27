@@ -1,2 +1,2 @@
 # docker-compose
-JabJ docker-compose example
+docker-compose example
