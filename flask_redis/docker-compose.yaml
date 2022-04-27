@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "9091:5000"
+    volumes:
+      - /home/project/docker/flask_redis/project/:/code
+    environment:
+      FLASK_ENV: development  
+  redis:
+    image: "redis:alpine"
+
